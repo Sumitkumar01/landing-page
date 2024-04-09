@@ -1,0 +1,59 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$Violet: hsl(257, 40%, 49%);
+$Soft-Magenta: #e882e8;
+
+$ff-op :"Open Sans", sans-serif;
+$ff-pp :"Poppins", sans-serif;
+
+.ff-pp{
+  font-family: $ff-pp;
+}
+
+.color-Violet{
+  color: $Violet;
+}
+
+.color-Soft-Magenta{
+  color: $Soft-Magenta;
+}
+
+body{
+  font-family: $ff-op;
+  font-optical-sizing: auto;
+  height: 100vh;
+  // width: 1900px;
+  background-image: url(./assets/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $Violet;
+  @media screen and (max-width: 768px) {
+    background-image: url(./assets/bg-mobile.svg);
+    
+  }
+}
+
+.c_container{
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 20px;
+  @media screen and (max-width: 768px) {
+    // padding: 0 10px;
+    max-width: 720px;
+  }
+  @media screen and (max-width: 480px) {
+    // padding: 0 5px;
+    max-width: 100%;
+  }
+}
+
+.btn{
+  &:hover{
+    box-shadow: 0px 0px 10px 2px hsl(258, 17%, 15%);
+  }
+}
